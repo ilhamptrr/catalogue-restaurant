@@ -1,0 +1,175 @@
+.list {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 499px) {
+  nav {
+    z-index: 10;
+    background-color: #000000;
+    opacity: 0.85;
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    margin-top: 40px;
+    position: fixed;
+
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  nav ul {
+    display: block;
+    width: 100%;
+  }
+
+  nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E0E0E0;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 40px;
+  }
+
+  nav li a {
+    box-sizing: border-box;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nameapp {
+    display: none;
+  }
+}
+  
+@media screen and (min-width: 500px) {
+  .mobile_container {
+    display: none;
+  }
+  
+  .header__menu {
+    display: none;
+  }
+
+  nav .nameapp {
+    font-size: 20px;
+  }
+
+  nav ul {
+    gap: 1rem;
+    margin-right: 15px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .post {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+  
+@media screen and (min-width: 650px) {
+  .hero__tagline1 {
+    font-size: 28px;
+  }
+  
+  .hero__tagline2 {
+    font-size: 16px;
+  }
+
+	.list_item_title {
+		font-size: 24px
+	}
+	.list_item_desc {
+		font-size: 14px
+	}
+}
+  
+@media screen and (min-width: 700px) {
+  .list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 16px
+	}
+
+  .menu {
+    display: flex;
+    width: 100%;
+  }
+  
+  .menuMakanan {
+    width: 50%;
+  }
+  
+  .menuMinuman {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  nav .nameapp {
+    font-size: 26px;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  nav a {
+    font-size: 18px;
+  } 
+
+  .hero__tagline1 {
+    font-size: 36px;
+  }
+  
+  .hero__tagline2 {
+    font-size: 20px;
+  }
+}
+  
+@media screen and (min-width: 900px) {
+  .list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+  .detail__content {
+    display: flex;
+  }
+
+  .detail__info {
+    width: 60%;
+  }
+
+  .spasi {
+    width: 5%;
+  }
+
+  aside {
+    width: 35%;
+  }
+}
+  
+@media screen and (min-width: 1200px) {
+    main {
+      max-width: 1200px;
+    }
+
+    .hero {
+      min-width: 1000px;
+    }
+}
